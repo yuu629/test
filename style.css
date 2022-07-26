@@ -119,3 +119,12 @@ iframe {
     border-color: initial;
     border-image: initial;
 }
+.HeaderNavListItem__link {
+    display: block;
+}
+ul {
+    list-style: none;
+}
+li {
+    text-align: -webkit-match-parent;
+}
