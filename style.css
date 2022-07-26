@@ -56,6 +56,31 @@ body {
 html {
     -webkit-text-size-adjust: 100%;
 }
+.FirstView__container {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.FirstView {
+    background-image: url(//camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+.FirstView__main-image--sp {
+    display: none;
+}
+.FirstView__main-image {
+    width: 100%;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
 .Header {
     width: 100%;
     position: absolute;
