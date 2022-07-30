@@ -51,17 +51,13 @@ header {
 div {
     display: block;
 }
+@media screen and (min-width: 768px)
 .HeaderLogo {
     transition: opacity .2s;
 }
 a {
     color: #000;
     text-decoration: none;
-}
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
 }
 .HeaderLogo__image--pc {
     display: block;
@@ -102,14 +98,13 @@ ul, ol {
     list-style: none;
 }
 ul {
-    display: block;
-    list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+@media screen and (min-width: 768px)
 .HeaderNavListItem {
     transition: opacity .2s;
 }
@@ -119,9 +114,6 @@ ul {
 li {
     display: list-item;
     text-align: -webkit-match-parent;
-}
-ul {
-    list-style-type: disc;
 }
 .HeaderNavListItem__link {
     display: block;
@@ -143,9 +135,6 @@ li {
 }
 ul, ol {
     list-style: none;
-}
-ul {
-    list-style-type: disc;
 }
 .HeaderNavListItem__link>span:last-child {
     font-size: 10px;
