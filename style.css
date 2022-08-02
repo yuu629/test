@@ -1,5 +1,8 @@
 element.style {
 }
+meta {
+    display: none;
+}
 body {
     color: #000;
     font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
@@ -36,19 +39,22 @@ script {
     width: 100%;
     position: absolute;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .Header {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-@media screen and (max-width: 1080px)
+}
+@media screen and (max-width: 1080px) {
 .Header {
     background-color: #fff;
     z-index: 10;
 }
-@media screen and (max-width: 1080px)
+}
+@media screen and (max-width: 1080px) {
 .Header--common {
     position: fixed !important;
+}
 }
 .Header {
     padding-top: 20px;
@@ -58,11 +64,6 @@ script {
 header {
     display: block;
 }
-@media screen and (max-width: 767px)
-.HeaderContainer {
-    max-width: 100%;
-    margin: 0 20px;
-}
 .HeaderContainer {
     display: flex;
     justify-content: space-between;
@@ -70,23 +71,31 @@ header {
     max-width: 100%;
     position: relative;
 }
+@media screen and (max-width: 767px) {
+.HeaderContainer {
+    max-width: 100%;
+    margin: 0 20px;
+}
+}
 div {
     display: block;
 }
 .HeaderLogo {
     transition: opacity .2s;
 }
-@media screen and (min-width: 768px)
+@media screen and (min-width: 768px) {
 .HeaderLogo {
     transition: opacity .2s;
+}
 }
 a {
     color: #000;
     text-decoration: none;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .HeaderLogo__image--pc {
     display: none;
+}
 }
 .HeaderLogo__image--pc {
     display: block;
@@ -100,9 +109,10 @@ img {
 .lazyload {
     background-image: none !important;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .HeaderLogo__image--sp {
     display: block;
+}
 }
 .HeaderLogo__image--sp {
     display: none;
@@ -119,7 +129,10 @@ img {
 nav {
     display: block;
 }
-@media screen and (max-width: 1080px)
+.HeaderNavHamburger {
+    display: none;
+}
+@media screen and (max-width: 1080px) {
 .HeaderNavHamburger {
     cursor: pointer;
     display: block;
@@ -128,14 +141,13 @@ nav {
     height: 21px;
     z-index: 100;
 }
-.HeaderNavHamburger {
-    display: none;
 }
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 1080px) {
 .HeaderNavHamburger__line:first-child {
     top: 0;
 }
-@media screen and (max-width: 1080px)
+}
+@media screen and (max-width: 1080px) {
 .HeaderNavHamburger__line {
     position: absolute;
     display: block;
@@ -146,13 +158,16 @@ nav {
     border-radius: 10px;
     transition: top .2s,transform .2s,opacity .3s;
 }
-@media screen and (max-width: 1080px)
+}
+@media screen and (max-width: 1080px) {
 .HeaderNavHamburger__line {
     top: 100%;
 }
-@media screen and (max-width: 1080px)
+}
+@media screen and (max-width: 1080px) {
 .HeaderNavHamburger__line {
     position: absolute;
+    top: 50%;
     display: block;
     width: 100%;
     height: 3px;
@@ -161,11 +176,31 @@ nav {
     border-radius: 10px;
     transition: top .2s,transform .2s,opacity .3s;
 }
-@media screen and (max-width: 767px)
+}
+@media screen and (max-width: 1080px) {
+.HeaderNavHamburger__line:last-child {
+    top: 100%;
+}
+}
+@media screen and (max-width: 1080px) {
+.HeaderNavHamburger__line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+}
+}
+@media screen and (max-width: 767px) {
 .HeaderNavList {
     top: 52px;
 }
-@media screen and (max-width: 1080px)
+}
+@media screen and (max-width: 1080px) {
 .HeaderNavList {
     overflow-y: scroll;
     position: fixed;
@@ -179,9 +214,11 @@ nav {
     background-color: rgba(0,0,0,.8);
     height: 100%;
 }
-@media screen and (max-width: 1080px)
+}
+@media screen and (max-width: 1080px) {
 .HeaderNavListItem {
     margin-right: 0;
+}
 }
 .HeaderNavList {
     align-items: center;
@@ -208,18 +245,20 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 1080px) {
 .HeaderNavListItem__link {
     padding: 20px 0;
+}
 }
 .HeaderNavListItem__link {
     display: block;
 }
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 1080px) {
 .HeaderNavListItem__link>span:first-child {
     font-size: 16px;
     letter-spacing: 5px;
     color: #fff;
+}
 }
 .HeaderNavListItem__link>span:first-child {
     font-family: 'Lato',sans-serif;
@@ -239,12 +278,13 @@ li {
 ul, ol {
     list-style: none;
 }
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 1080px) {
 .HeaderNavListItem__link>span:last-child {
     font-size: 12px;
     margin-top: 10px;
     color: #f79214;
     letter-spacing: 2px;
+}
 }
 .HeaderNavListItem__link>span:last-child {
     font-size: 10px;
@@ -285,24 +325,24 @@ a {
 .HeaderNavListItem:last-of-type {
     margin-right: 0;
 }
-@media screen and (max-width: 767px)
+main {
+    display: block;
+}
+@media screen and (max-width: 1080px) {
+main {
+    padding-top: 60px;
+}
+}
+@media screen and (max-width: 767px) {
 main {
     padding-top: 52px;
 }
-main {
-    display: block;
 }
 body {
     color: #000;
     font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
     font-size: 14px;
     font-weight: 500;
-}
-@media screen and (max-width 767px)
-.FirstView {
-    background-image: none;
-    padding-top: 0;
-    padding-bottom: 35px;
 }
 .FirstView {
     background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
@@ -311,31 +351,41 @@ body {
     padding-top: 100px;
     padding-bottom: 28px;
 }
+@media screen and (max-width: 767px) {
+.FirstView {
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+}
+}
 section {
     display: block;
 }
 .lazyload {
     background-image: none !important;
 }
-@media screen and (max-width: 767px)
+.FirstView__main-image--sp {
+    display: none;
+}
+@media screen and (max-width: 767px) {
 .FirstView__main-image--sp {
     display: block;
 }
-.FirstView__main-image--sp {
-    display: none;
 }
 .FirstView__main-image {
     width: 100%;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstView__container {
     margin-top: -45vw;
 }
-@media screen and (max-width: 767px)
+}
+@media screen and (max-width: 767px) {
 .FirstView__container {
     max-width: none;
     padding-left: 20px;
     padding-right: 20px;
+}
 }
 .FirstView__container {
     max-width: 1140px;
@@ -345,21 +395,15 @@ section {
     margin-right: auto;
     position: relative;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstViewContent {
     margin-bottom: 20px;
     width: 100%;
 }
+}
 .FirstViewContent {
     margin-bottom: 70px;
     width: fit-content;
-}
-@media screen and (max-width: 767px)
-.FirstViewContent__title {
-    font-size: 25px;
-    line-height: 36px;
-    margin-left: calc(((100vw - 100%)/2)*-1);
-    margin-right: calc(((100vw - 100%)/2)*-1);
 }
 .FirstViewContent__title {
     color: #000;
@@ -370,6 +414,14 @@ section {
     margin-bottom: 15px;
     text-align: center;
 }
+@media screen and (max-width: 767px) {
+.FirstViewContent__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%)/2)*-1);
+    margin-right: calc(((100vw - 100%)/2)*-1);
+}
+}
 h2 {
     display: block;
     margin-block-start: 0.83em;
@@ -377,19 +429,21 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstViewContent__images {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
     width: 100%;
 }
+}
 .FirstViewContent__images {
     margin-bottom: 25px;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstViewContent__images img {
     width: 27.5%;
+}
 }
 .FirstViewContent__images img {
     margin-right: 8px;
@@ -404,32 +458,36 @@ img {
 .FirstViewContent__images img {
     margin-right: 8px;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstViewContent__images img {
     width: 27.5%;
+}
 }
 .FirstViewContent__images img:last-of-type {
     margin-right: 0;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstViewContent__buttons {
     flex-direction: column;
+}
 }
 .FirstViewContent__buttons {
     display: flex;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstViewContent__buttons a:first-of-type {
     margin-right: 0;
+}
 }
 .FirstViewContent__buttons a:first-of-type {
     margin-right: 15px;
     width: 306px;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstViewContent__buttons a {
     font-size: 14px;
     width: 100% !important;
+}
 }
 .FirstViewContent__buttons a:visited {
     color: #fff;
@@ -452,9 +510,10 @@ img {
     text-decoration: none;
     text-align: center;
 }
-@media screen and (max-width: 767px)
+@media screen and (max-width: 767px) {
 .FirstViewContent__buttons a:last-of-type {
     display: none;
+}
 }
 .FirstViewContent__buttons a:last-of-type {
     background-color: #fff;
@@ -482,24 +541,15 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-@media screen and (max-width: 767px)
-.AboutWrapper {
-    padding: 30px 0;
-}
 .AboutWrapper {
     padding: 120px 0;
     background-color: #f79214;
     padding: 44px 0;
 }
-@media screen and (max-width: 1024px)
-.About {
-    flex-direction: column;
+@media screen and (max-width: 767px) {
+.AboutWrapper {
+    padding: 30px 0;
 }
-@media screen and (max-width: 767px)
-.About {
-    max-width: none;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 .About {
     max-width: 1140px;
@@ -512,28 +562,33 @@ p {
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width: 767px)
-.About__video {
-    width: 100%;
+@media screen and (max-width: 767px) {
+.About {
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-@media screen and (max-width: 1024px)
-.About__video {
-    margin-bottom: 16px;
+}
+@media screen and (max-width: 1024px) {
+.About {
+    flex-direction: column;
+}
 }
 .About__video {
     width: 50%;
 }
-video {
-    object-fit: contain;
-}
-@media screen and (max-width: 767px)
-.About__title {
-    margin-bottom: 0;
+@media screen and (max-width: 767px) {
+.About__video {
     width: 100%;
 }
-@media screen and (max-width: 1024px)
-.About__title {
-    margin-left: 0;
+}
+@media screen and (max-width: 1024px) {
+.About__video {
+    margin-bottom: 16px;
+}
+}
+video {
+    object-fit: contain;
 }
 .About__title {
     display: flex;
@@ -543,11 +598,44 @@ video {
     margin-bottom: 0;
     margin-left: 32px;
 }
-@media screen and (max-width: 400px)
+@media screen and (max-width: 767px) {
+.About__title {
+    margin-bottom: 45px;
+}
+}
+@media screen and (max-width: 1024px) {
+.About__title {
+    margin-left: 0;
+}
+}
+@media screen and (max-width: 767px) {
+.About__title {
+    margin-bottom: 0;
+    width: 100%;
+}
+}
+@media screen and (max-width: 400px) {
 .About__title h2 {
     line-height: 1.4;
     white-space: pre;
     word-break: keep-all;
+}
+}
+.About__title h2 {
+    font-family: 'Lato',sans-serif;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 74px;
+}
+@media screen and (max-width: 767px) {
+.About__title h2 {
+    font-size: 30px !important;
+}
+}
+.About__title h2,
+.About__title p {
+    color: #fff;
+    text-align: left;
 }
 .About__title h2 {
     font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
@@ -557,37 +645,33 @@ video {
     line-height: 54px;
     width: 100%;
 }
-.About__title h2, .About__title p {
-    color: #fff;
-    text-align: left;
-}
-@media screen and (max-width: 767px)
+@media screen and (max-width: 400px) {
 .About__title h2 {
-    font-size: 30px !important;
+    font-size: 33px;
+    line-height: 1.4;
+    white-space: pre;
+    word-break: keep-all;
 }
-.About__title h2 {
-    font-family: 'Lato',sans-serif;
-    font-size: 46px;
-    font-weight: 700;
-    line-height: 74px;
+}
+.About__title h2 span {
+    font-weight: 900;
+}
+@media screen and (max-width: 767px) {
+.About__title h2 span {
+    letter-spacing: 1px;
+}
 }
 .About__title h2>span {
     font-family: 'Lato',sans-serif;
     font-size: 38px;
 }
-@media screen and (max-width: 767px)
-.About__title h2 span {
-    letter-spacing: 1px;
+.About__title br {
+    display: none;
 }
-.About__title h2 span {
-    font-weight: 900;
-}
-@media screen and (max-width: 400px)
+@media screen and (max-width: 400px) {
 .About__title br {
     display: block;
 }
-.About__title br {
-    display: none;
 }
 .About__title p {
     font-size: 16px;
