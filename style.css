@@ -322,6 +322,11 @@ a {
     height: 40px;
     padding: 0 20px;
 }
+@media screen and (min-width: 768px) {
+.HeaderNavListItem__button:hover {
+    opacity: .8;
+}
+}
 .HeaderNavListItem:last-of-type {
     margin-right: 0;
 }
@@ -477,6 +482,11 @@ img {
 @media screen and (max-width: 767px) {
 .FirstViewContent__buttons a:first-of-type {
     margin-right: 0;
+}
+}
+@media screen and (min-width: 768px) {
+.FirstViewContent__buttons a:hover {
+    opacity: .8;
 }
 }
 .FirstViewContent__buttons a:first-of-type {
