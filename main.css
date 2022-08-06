@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  font-size: 1rem;
+  margin: 2rem;
+}
+#time {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+#buttons {
+  font-size: 2rem;
+  text-align: center;
+}
