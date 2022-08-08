@@ -1,21 +1,41 @@
- <!DOCTYPE html>
- <html lang="en">
-  <head>
-   <meta charset="utf-8">
-   <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="main.css">
-   <title>ストップウォッチ</title>
-  </head>
-  <body>
-   <h1>ストップウォッチ️</h1>
-  <div id="container">
-    <div id="time">00:00:00.000</div>
-    <div id="buttons">
-      <input id="start" type="button" value="スタート">
-      <input id="stop" type="button" value="ストップ">
-      <input id="reset" type="button" value="リセット">
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <title>電卓</title>
+ </head>
+ <body>
+<body>
+  <input type="text" id="result" readonly="readonly">
+  <div class="operation">
+    <input type="button" value="1" onclick="edit(this.value)">
+    <input type="button" value="2" onclick="edit(this.value)">
+    <input type="button" value="3" onclick="edit(this.value)">
+    <input type="button" value="+" onclick="edit(this.value)">
   </div>
-  <script src='main.js'></script>
-</body>
+  <div class="operation">
+    <input type="button" value="4" onclick="edit(this.value)">
+    <input type="button" value="5" onclick="edit(this.value)">
+    <input type="button" value="6" onclick="edit(this.value)">
+    <input type="button" value="-" onclick="edit(this.value)">
+  </div>
+  <div class="operation">
+    <input type="button" value="7" onclick="edit(this.value)">
+    <input type="button" value="8" onclick="edit(this.value)">
+    <input type="button" value="9" onclick="edit(this.value)">
+    <input type="button" value="/" onclick="edit(this.value)">
+  </div>
+  <div class="operation">
+    <input type="button" value="0" onclick="edit(this.value)">
+    <input type="button" value="00" onclick="edit(this.value)">
+    <input type="button" value="." onclick="edit(this.value)">
+    <input type="button" value="*" onclick="edit(this.value)">
+  </div>
+  <div class="operation">
+    <input type="button" value="C" onclick="reset()">
+    <input type="button" value="=" onclick="calc()">
+  </div>
+  <script src="main.js"></script>
+ </body>
 </html>
