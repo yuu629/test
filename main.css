@@ -1,25 +1,19 @@
-#result {
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  outline: none;
-  background-color: #fff;
-  height: 25px;
-  margin-bottom: 7px;
-}
-.operation input{
+#calc{
   box-sizing: border-box;
-  width: 50%;
-  height: 3.5rem;
+  text-align: center;
+}
+input{
+  box-sizing: border-box;
+  width: 40%;
+  height: 2.5rem;
   font-size: 1.6rem;
   text-align: right;
   padding: 0 0.75rem;
 }
-.operation input{
-  font-size: 18px;
-  width: 40px;
-  height: 40px;
-  color: #333;
-  vertical-align: middle;
+button{
+  font-size: 14px;
+  width: 10%;
+  height: 1.5rem;
+  color: #000;
   border-color: #fff;
 }
