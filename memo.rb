@@ -12,17 +12,25 @@ if input_number == "1"
 puts "拡張子を除いたファイルを入力してください"
 file_name = gets.chomp
 
-puts"メモの内容を記入して下さい。完了したらCtrl+Dをおします"
-imput_memo = STDIN.read
-memo = imput_memo.chomp
+puts"メモの内容を記入して下さい"
+puts"完了したらCtrl+Dをおします"
+memo = STDIN.read
 
-CSV.open("#{file_name}.csv" , "a") do |csv|
+CSV.open("#{file_name}.csv","w") do |csv|
 csv.puts ["#{memo}"]
 end
 
 elsif input_number == "2"
 puts "拡張子を除いた既存ファイル名を入力してください"
+file_name = gets.chomp
 
+puts"編集内容を記入してください"
+puts"完了したらCtrl+Dをおします"
+memo = STDIN.read
+CSV.open("#{file_name}.csv","a") do |csv|
+csv.puts ["#{memo}"]
+
+end
 
 else
 puts "1か2の数字を入力してください"
